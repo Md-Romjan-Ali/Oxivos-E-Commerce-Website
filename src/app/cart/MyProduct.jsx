@@ -1,5 +1,6 @@
 import { Authcontext } from '@/component/Provider';
 import React, { useContext } from 'react';
+import toast from 'react-hot-toast';
 import { FaTrash } from 'react-icons/fa';
 
 const MyProduct = ({ product }) => {
@@ -7,6 +8,7 @@ const MyProduct = ({ product }) => {
     const deleteHandle = (id) => {
         const deleteData = cart.filter(carts => carts.id !== id)
         setCart(deleteData)
+        toast.success("Delete Product Succefully")
     }
     return (
         <div>
