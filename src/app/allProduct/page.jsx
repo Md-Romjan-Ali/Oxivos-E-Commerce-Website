@@ -4,8 +4,8 @@ import { Authcontext } from '@/component/Provider';
 import React, { useContext } from 'react';
 
 const AllProduct = () => {
-    const useData = useContext(Authcontext)
-    console.log(useData, 'from  all ');
+    const { products } = useContext(Authcontext)
+
     return (
         <main className='bg-gray-200'>
             <div className='max-w-7xl mx-auto'>
@@ -15,7 +15,7 @@ const AllProduct = () => {
                 </div>
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4'>
                     {
-                        useData?.map(data =>
+                        products?.map(data =>
                             <DisplayProduct key={data.id} data={data}></DisplayProduct>)
                     }
                 </div>

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { IoCartOutline } from 'react-icons/io5';
 
 const Navbar = () => {
     return (
@@ -19,8 +20,11 @@ const Navbar = () => {
                         <li><Link href={'/allProduct'}>All Product</Link></li>
                     </ul>
                 </nav>
-                <div>
-                    <button className='px-4 py-2 rounded-xl border-2 border-amber-900 text-white hover:bg-amber-900 hover:border-amber-600'>Join Us</button>
+                <div className='flex items-center gap-5'>
+                    <Link href={'/cart'}>
+                        <IoCartOutline size={30} className='text-gray-200' />
+                    </Link>
+                    <button className='button1'>Join Us</button>
                 </div>
             </div>
         </div>
