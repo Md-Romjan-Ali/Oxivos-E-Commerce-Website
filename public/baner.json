@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600&q=80",
+        "title": "Summer Collection 2026",
+        "subtitle": "Up to 50% Off on Fashion"
+    },
+    {
+        "id": 2,
+        "image": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=1600&q=80",
+        "title": "New Arrival",
+        "subtitle": "Discover the Latest Trends"
+    },
+    {
+        "id": 3,
+        "image": "https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600&q=80",
+        "title": "Premium Collection",
+        "subtitle": "Shop Your Favorite Products"
+    }
+]

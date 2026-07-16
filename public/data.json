@@ -1,0 +1,238 @@
+[
+    {
+        "id": 1,
+        "name": "Classic Cotton Panjabi",
+        "category": "Panjabi",
+        "price": 1490,
+        "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=600",
+        "rating": 4.5,
+        "colors": [
+            "White",
+            "Navy"
+        ],
+        "sizes": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "inStock": true,
+        "description": "Premium cotton panjabi perfect for casual and festive occasions."
+    },
+    {
+        "id": 2,
+        "name": "Elegant Silk Panjabi",
+        "category": "Panjabi",
+        "price": 2290,
+        "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=600",
+        "rating": 4.8,
+        "colors": [
+            "Black",
+            "Maroon"
+        ],
+        "sizes": [
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "inStock": true,
+        "description": "Luxury silk panjabi with elegant embroidery."
+    },
+    {
+        "id": 3,
+        "name": "Linen Casual Shirt",
+        "category": "Shirt",
+        "price": 1190,
+        "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=600",
+        "rating": 4.4,
+        "colors": [
+            "Sky Blue",
+            "White"
+        ],
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "inStock": true,
+        "description": "Soft linen shirt designed for all-day comfort."
+    },
+    {
+        "id": 4,
+        "name": "Formal Slim Fit Shirt",
+        "category": "Shirt",
+        "price": 1390,
+        "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600",
+        "rating": 4.6,
+        "colors": [
+            "White",
+            "Gray"
+        ],
+        "sizes": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "inStock": false,
+        "description": "Modern slim-fit formal shirt for office wear."
+    },
+    {
+        "id": 5,
+        "name": "Premium Denim Jeans",
+        "category": "Jeans",
+        "price": 1890,
+        "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=600",
+        "rating": 4.7,
+        "colors": [
+            "Blue",
+            "Black"
+        ],
+        "sizes": [
+            "30",
+            "32",
+            "34",
+            "36"
+        ],
+        "inStock": true,
+        "description": "Stretchable denim jeans with a modern fit."
+    },
+    {
+        "id": 6,
+        "name": "Classic Chinos",
+        "category": "Pants",
+        "price": 1590,
+        "image": "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=600",
+        "rating": 4.3,
+        "colors": [
+            "Khaki",
+            "Olive"
+        ],
+        "sizes": [
+            "30",
+            "32",
+            "34"
+        ],
+        "inStock": true,
+        "description": "Comfortable chinos suitable for casual and formal use."
+    },
+    {
+        "id": 7,
+        "name": "Graphic Cotton T-Shirt",
+        "category": "T-Shirt",
+        "price": 790,
+        "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600",
+        "rating": 4.5,
+        "colors": [
+            "Black",
+            "White"
+        ],
+        "sizes": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "inStock": true,
+        "description": "100% cotton graphic t-shirt with premium print."
+    },
+    {
+        "id": 8,
+        "name": "Minimal Polo Shirt",
+        "category": "Polo",
+        "price": 990,
+        "image": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=600",
+        "rating": 4.4,
+        "colors": [
+            "Navy",
+            "Green"
+        ],
+        "sizes": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "inStock": true,
+        "description": "Classic polo shirt for everyday elegance."
+    },
+    {
+        "id": 9,
+        "name": "Winter Hoodie",
+        "category": "Hoodie",
+        "price": 1790,
+        "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600",
+        "rating": 4.8,
+        "colors": [
+            "Gray",
+            "Black"
+        ],
+        "sizes": [
+            "M",
+            "L",
+            "XL",
+            "XXL"
+        ],
+        "inStock": false,
+        "description": "Warm fleece hoodie for winter comfort."
+    },
+    {
+        "id": 10,
+        "name": "Sports Jacket",
+        "category": "Jacket",
+        "price": 2990,
+        "image": "https://images.unsplash.com/photo-1521223890158-f9f7c3d5d504?w=600",
+        "rating": 4.9,
+        "colors": [
+            "Black",
+            "Blue"
+        ],
+        "sizes": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "inStock": true,
+        "description": "Lightweight sports jacket with water-resistant fabric."
+    },
+    {
+        "id": 11,
+        "name": "Leather Belt",
+        "category": "Accessories",
+        "price": 690,
+        "image": "https://images.unsplash.com/photo-1624222247344-550fb60583dc?w=600",
+        "rating": 4.2,
+        "colors": [
+            "Brown",
+            "Black"
+        ],
+        "sizes": [
+            "32",
+            "34",
+            "36",
+            "38"
+        ],
+        "inStock": true,
+        "description": "Genuine leather belt with a classic buckle."
+    },
+    {
+        "id": 12,
+        "name": "Casual Sneakers",
+        "category": "Shoes",
+        "price": 2490,
+        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600",
+        "rating": 4.7,
+        "colors": [
+            "White",
+            "Black"
+        ],
+        "sizes": [
+            "40",
+            "41",
+            "42",
+            "43",
+            "44"
+        ],
+        "inStock": true,
+        "description": "Comfortable everyday sneakers with a modern design."
+    }
+]
