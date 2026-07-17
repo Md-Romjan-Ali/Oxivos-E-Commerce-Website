@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from "react";
 import DisplayProduct from "./DisplayProduct";
-
+import { motion } from "motion/react"
+import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 const HomeProduct = () => {
     const [datas, setDatas] = useState([])
     useEffect(() => {
@@ -11,9 +13,11 @@ const HomeProduct = () => {
             .then(res => setDatas(res))
     }, []
     )
-    console.log(datas, 'from home');
     return (
-        <div className="max-w-7xl mx-auto  my-10">
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            className="max-w-7xl mx-auto  my-10">
             <div className="max-w-2xl mx-auto text-center space-y-5 my-5">
 
                 <h1 className='text-4xl relative flex justify-center items-center font-bold'>Top Picks for You
@@ -23,12 +27,18 @@ const HomeProduct = () => {
 
 
             </div>
+            <div className="text-lg text-cyan-700 my-4 flex justify-end items-center gap-1 hover:text-cyan-600 ">
+                <Link href={'/allProduct'} className="">Explore Products </Link>
+                <FaArrowRight />
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 {
                     datas?.slice(0, 4).map(data => <DisplayProduct key={data.id} data={data}></DisplayProduct>)
                 }
             </div>
-        </div>
+
+
+        </motion.div>
     );
 };
 

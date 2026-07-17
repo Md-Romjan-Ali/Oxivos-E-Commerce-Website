@@ -6,10 +6,9 @@ import MyProduct from "./MyProduct";
 import { FaSearch } from "react-icons/fa";
 
 const CartPage = () => {
-    const { cart, prices } = useContext(Authcontext)
+    const { cart } = useContext(Authcontext)
     const mapTotalData = cart.map(product => product.price)
     const totalPrice = mapTotalData.reduce((total, prodct) => total + Number(prodct), 0)
-    console.log(totalPrice, 'total price');
     return (
         <motion.div
             initial={{

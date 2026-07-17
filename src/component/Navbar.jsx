@@ -17,8 +17,8 @@ const Navbar = () => {
         <li className={`hover:text-cyan-600 ${pathName === '/allProduct' && 'text-cyan-600'}`}><Link href={'/allProduct'}>All Product</Link></li>
     </>
     return (
-        <div className='bg-gradient-to-br from-[#020b1e] via-[#081b3b] to-[#010714] px-2'>
-            <div className='flex justify-between max-w-7xl items-center mx-auto '>
+        <div className='bg-gradient-to-br from-[#020b1e] via-[#081b3b] to-[#010714] px-2 '>
+            <div className='flex justify-between max-w-7xl items-center mx-auto'>
                 <Link href={'/'}>
                     <Image
                         width={200}

@@ -11,7 +11,6 @@ const AddCartButton = ({ findData }) => {
         setCart([...cart, findData])
         toast.success("Add to Cart Successfully")
     }
-    console.log(cart, 'from cart');
     return (
         <div>
             <button onClick={cartHandle} className='button1'>

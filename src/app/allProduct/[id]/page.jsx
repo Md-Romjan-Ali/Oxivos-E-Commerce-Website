@@ -1,5 +1,4 @@
 
-
 import AddCartButton from '@/component/AddCartButton';
 import { ArrowLeft, Star } from 'lucide-react';
 import Image from 'next/image';
@@ -11,7 +10,7 @@ const DetailsPage = async ({ params }) => {
     const res = await fetch(`https://oxivos-e-commerce.vercel.app/data.json`)
     const req = await res.json()
     const findData = req.find(data => data.id == id)
-    console.log(findData, 'from fetils', req, id);
+
     return (
         <div className='max-w-4xl mx-auto my-10'>
             <div className='group bg-gradient-to-br from-[#020b1e] via-[#081b3b] to-[#010714] rounded-2xl overflow-hidden hover:scale-103 transition-all duration-300'>

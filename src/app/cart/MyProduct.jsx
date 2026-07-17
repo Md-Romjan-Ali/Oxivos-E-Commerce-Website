@@ -5,24 +5,22 @@ import toast from 'react-hot-toast';
 import { FaTrash } from 'react-icons/fa';
 
 const MyProduct = ({ product }) => {
-    const { cart, setCart, prices, setPrices } = useContext(Authcontext)
+    const { cart, setCart } = useContext(Authcontext)
     const [counts, setCounts] = useState(1)
-    console.log(cart, 'all data');
+
     const deleteHandle = (id) => {
         const deleteData = cart.filter(carts => carts.id !== id)
         setCart(deleteData)
         toast.success("Delete Product Succefully")
     }
-    console.log(product.price, 'from my produt');
-    const addCount = (id) => {
+
+    const addCount = () => {
         setCounts(counts + 1)
-
     }
-    const deleteCount = (id) => {
+    const deleteCount = () => {
         setCounts(counts - 1)
-
     }
-    console.log(prices, 'all data');
+
     return (
         <div>
             <div className="bg-gradient-to-br from-[#020b1e] via-[#081b3b] to-[#010714] p-5 rounded-xl mb-2 group flex items-center flex-wrap gap-5 sm:justify-between justify-center">
@@ -30,7 +28,7 @@ const MyProduct = ({ product }) => {
                     <p className="text-cyan-400 group-hover:text-cyan-500 text-2xl">{product.name}</p>
                     <p className='text-gray-300 font-bold text-xl gap-2 flex items-center mt-3 text-gray-300'>
                         <span className='text-2xl  font-extrabold '>৳</span>
-                        {product.price}</p>
+                        {product.price} {counts > 1 && `x ${counts}`}</p>
                 </div>
 
                 <div className="flex items-center gap-4">
@@ -40,11 +38,11 @@ const MyProduct = ({ product }) => {
                             {
                                 counts > 1
                                 &&
-                                <button onClick={() => deleteCount(product.id)}>-</button>
+                                <button onClick={deleteCount}>-</button>
                             }
 
                             <p>{counts}</p>
-                            <button onClick={() => addCount(product.id)}>+</button>
+                            <button onClick={addCount}>+</button>
                         </div>
 
                     </div>
