@@ -15,7 +15,10 @@ const HomeProduct = () => {
     return (
         <div className="max-w-7xl mx-auto  my-10">
             <div className="max-w-2xl mx-auto text-center space-y-5 my-5">
-                <h1 className="text-3xl font-bold text-gray-950">Top Picks for You</h1>
+
+                <h1 className='text-4xl relative flex justify-center items-center font-bold'>Top Picks for You
+                    <span className='h-2 w-20 shadow-2xl bg-cyan-400 rounded-2xl absolute -bottom-3'></span>
+                </h1>
                 <p className="text-lg font-semibold text-gray-500">Browse our most popular products, carefully selected to bring you the best in fashion, quality, and value.</p>
 
 

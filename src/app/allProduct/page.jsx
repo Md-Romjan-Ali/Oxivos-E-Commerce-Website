@@ -18,8 +18,13 @@ const AllProduct = () => {
         <main className='bg-gray-200'>
             <div className='max-w-7xl mx-auto'>
                 <div className='flex flex-col justify-center space-y-3 py-10 text-center'>
-                    <h1 className='text-4xl font-bold'>Our Featured Collection</h1>
-                    <p className='text-lg font-semibold leading-9'>Browse our carefully selected collection of clothing, accessories, and <br /> everyday essentials designed to match your style.</p>
+                    <div className=''>
+                        <h1 className='text-4xl relative flex justify-center items-center font-bold'>Our Featured Collection
+                            <span className='h-2 w-20 shadow-2xl bg-cyan-400 rounded-2xl absolute -bottom-3'></span>
+                        </h1>
+
+                    </div>
+                    <p className='text-lg font-semibold leading-9 text-gray-500'>Browse our carefully selected collection of clothing, accessories, and <br /> everyday essentials designed to match your style.</p>
                 </div>
                 {/* search and filter */}
                 <div className='flex flex-wrap gap-5 my-5 items-center'>
