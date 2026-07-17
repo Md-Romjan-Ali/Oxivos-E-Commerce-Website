@@ -6,11 +6,13 @@ import MyProduct from "./MyProduct";
 import { FaSearch } from "react-icons/fa";
 
 const CartPage = () => {
-    const { cart } = useContext(Authcontext)
-
+    const { cart, prices } = useContext(Authcontext)
+    const mapTotalData = cart.map(product => product.price)
+    const totalPrice = mapTotalData.reduce((total, prodct) => total + Number(prodct), 0)
+    console.log(totalPrice, 'total price');
     return (
         <div className="bg-gray-100">
-            <div className="max-w-7xl mx-auto py-10 min-h-screen">
+            <div className="max-w-7xl mx-auto py-10">
                 {
                     cart.length === 0 ?
 
@@ -30,6 +32,14 @@ const CartPage = () => {
                                 <p className="text-lg text-gray-700 my-5">Review the products you have added to your cart, update quantities, and check your total before proceeding to checkout.</p>
                             </div>
                             <div>
+                                <div className="flex flex-wrap justify-between items-center p-8 rounded-xl gap-5 bg-black/50 shadow-2xl mb-4 relative">
+                                    <p className="text-2xl font-semibold text-gray-300">Total Amount</p>
+                                    <p className='text-cyan-500 font-bold text-xl gap-2 flex items-center '>
+
+                                        <span className='text-xl font-extrabold'>৳</span>
+                                        {totalPrice}</p>
+                                    <h1 className="bg-black py-2 px-5 rounded-xl text-gray-300 absolute right-0 -top-5 text-2xl font-bold">QTY - {cart.length}</h1>
+                                </div>
                                 {
                                     cart.map((product, index) =>
                                         <MyProduct key={index} product={product} />

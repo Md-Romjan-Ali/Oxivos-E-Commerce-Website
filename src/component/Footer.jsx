@@ -7,7 +7,7 @@ const Footer = () => {
             <Image
                 width={1000}
                 height={1000}
-                src={'https://i.ibb.co.com/pBt2zmSc/Chat-GPT-Image-Jul-16-2026-09-37-38-PM-removebg-preview.png'}
+                src={'https://i.ibb.co.com/GvWbgskc/Chat-GPT-Image-Jul-16-2026-09-18-19-PM-removebg-preview.png'}
                 alt='oxivos logo'
                 className=''
             />

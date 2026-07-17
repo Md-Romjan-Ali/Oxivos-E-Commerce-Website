@@ -4,6 +4,7 @@ export const Authcontext = createContext(null)
 const Provider = ({ children }) => {
     const [products, setProducts] = useState([])
     const [cart, setCart] = useState([])
+    const [prices, setPrices] = useState(0)
     useEffect(() => {
         fetch(`https://oxivos-e-commerce.vercel.app/data.json`)
             .then(req => req.json())
@@ -12,7 +13,9 @@ const Provider = ({ children }) => {
     const product = {
         setCart,
         cart,
-        products
+        products,
+        prices,
+        setPrices
     }
     return (
         <div>

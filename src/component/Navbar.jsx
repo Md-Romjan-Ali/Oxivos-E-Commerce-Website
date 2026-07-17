@@ -9,7 +9,7 @@ import { CiMenuBurger } from 'react-icons/ci';
 
 const Navbar = () => {
     const pathName = usePathname()
-    console.log(pathName, 'from navbar');
+
     const { cart } = useContext(Authcontext)
     const [open, setOpen] = useState(false)
     const navMenu = <>
@@ -23,7 +23,7 @@ const Navbar = () => {
                     <Image
                         width={200}
                         height={200}
-                        src={'https://i.ibb.co.com/pBt2zmSc/Chat-GPT-Image-Jul-16-2026-09-37-38-PM-removebg-preview.png'}
+                        src={'https://i.ibb.co.com/GvWbgskc/Chat-GPT-Image-Jul-16-2026-09-18-19-PM-removebg-preview.png'}
                         alt='oxivos logo'
                         className='h-20 w-50'
                     />
