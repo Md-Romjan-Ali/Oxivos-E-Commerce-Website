@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-
 const DisplayProduct = ({ data }) => {
     console.log(data, 'from dispaly');
     return (
-        <div className='group bg-gradient-to-br from-[#020b1e] via-[#081b3b] to-[#010714] rounded-4xl overflow-hidden hover:scale-103 transition-all duration-300'>
+        <div
+
+            className='group bg-gradient-to-br from-[#020b1e] via-[#081b3b] to-[#010714] rounded-4xl overflow-hidden hover:scale-103 transition-all duration-300'>
             <div className='overflow-hidden '>
                 <div className='relative'>
                     <Image

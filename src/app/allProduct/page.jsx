@@ -3,7 +3,7 @@ import DisplayProduct from '@/component/DisplayProduct';
 import { Authcontext } from '@/component/Provider';
 import React, { useContext, useState } from 'react';
 import { FaSearch } from 'react-icons/fa';
-
+import { motion } from "motion/react"
 const AllProduct = () => {
     const { products } = useContext(Authcontext)
     const [search, setSearch] = useState('')
@@ -16,7 +16,12 @@ const AllProduct = () => {
 
     return (
         <main className='bg-gray-200'>
-            <div className='max-w-7xl mx-auto'>
+            <motion.div
+                initial={{
+                    opacity: 0
+                }}
+                animate={{ opacity: 2 }}
+                className='max-w-7xl mx-auto'>
                 <div className='flex flex-col justify-center space-y-3 py-10 text-center'>
                     <div className=''>
                         <h1 className='text-4xl relative flex justify-center items-center font-bold'>Our Featured Collection
@@ -79,7 +84,7 @@ const AllProduct = () => {
                 }
 
 
-            </div>
+            </motion.div>
         </main>
 
     );

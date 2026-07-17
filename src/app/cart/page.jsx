@@ -1,5 +1,5 @@
 "use client"
-
+import { motion } from "motion/react"
 import { Authcontext } from "@/component/Provider";
 import { useContext } from "react";
 import MyProduct from "./MyProduct";
@@ -11,7 +11,14 @@ const CartPage = () => {
     const totalPrice = mapTotalData.reduce((total, prodct) => total + Number(prodct), 0)
     console.log(totalPrice, 'total price');
     return (
-        <div className="bg-gray-100">
+        <motion.div
+            initial={{
+                opacity: 0,
+            }}
+            animate={{
+                opacity: 1
+            }}
+            className="bg-gray-100">
             <div className="max-w-7xl mx-auto py-10">
                 {
                     cart.length === 0 ?
@@ -51,7 +58,7 @@ const CartPage = () => {
 
 
             </div>
-        </div>
+        </motion.div>
 
     );
 };
