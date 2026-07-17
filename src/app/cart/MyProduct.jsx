@@ -12,7 +12,7 @@ const MyProduct = ({ product }) => {
         setCart(deleteData)
         toast.success("Delete Product Succefully")
     }
-    let count = 0
+   
     const addCount = () => {
         setCounts(counts + 1)
     }

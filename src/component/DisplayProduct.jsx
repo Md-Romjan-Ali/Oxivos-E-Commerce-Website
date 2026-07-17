@@ -16,7 +16,7 @@ const DisplayProduct = ({ data }) => {
                         className='h-80 group-hover:scale-105 transition-all duration-1000 w-full object-cover'
                     />
                     {/* avaible */}
-                    <p className='bg-black/50 px-3 py-1.5 text-cyan-300 absolute top-3 left-3 rounded-2xl border-gray-300'>{data.inStock ? 'Available' : ''}</p>
+                    <p className='bg-black/50 px-3 py-1.5 text-cyan-300 absolute top-3 left-3 rounded-2xl border-gray-300'>{data.inStock ? 'Available' : null}</p>
                 </div>
 
                 <div className='p-5'>

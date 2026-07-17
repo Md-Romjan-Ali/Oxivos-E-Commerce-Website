@@ -19,13 +19,16 @@ const Navbar = () => {
     return (
         <div className='bg-gradient-to-br from-[#020b1e] via-[#081b3b] to-[#010714] px-2'>
             <div className='flex justify-between max-w-7xl items-center mx-auto '>
-                <Image
-                    width={200}
-                    height={200}
-                    src={'https://i.ibb.co.com/pBt2zmSc/Chat-GPT-Image-Jul-16-2026-09-37-38-PM-removebg-preview.png'}
-                    alt='oxivos logo'
-                    className='h-20 w-50'
-                />
+                <Link href={'/'}>
+                    <Image
+                        width={200}
+                        height={200}
+                        src={'https://i.ibb.co.com/pBt2zmSc/Chat-GPT-Image-Jul-16-2026-09-37-38-PM-removebg-preview.png'}
+                        alt='oxivos logo'
+                        className='h-20 w-50'
+                    />
+                </Link>
+
                 <nav className='hidden md:block'>
                     <ul className='flex gap-3 items-center text-lg font-semibold text-gray-300'>
                         {navMenu}

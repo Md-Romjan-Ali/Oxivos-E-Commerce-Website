@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div className=' bg-gradient-to-br from-[#020b1e] via-[#081b3b] to-[#010714] h-[400px] flex items-center justify-center mt-10'>
+        <div className=' bg-gradient-to-br from-[#020b1e] via-[#081b3b] to-[#010714] h-[400px] flex items-center justify-center'>
             <Image
                 width={1000}
                 height={1000}
